@@ -13,11 +13,11 @@
 
         body {
             background-image: url("https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/espaco-1280x720.jpeg");
-            background-color: #cccccc;
+            background-color: #60a5ff;
             font-size: 16px;
             display: grid;
             place-items: center;
-            border: 50vh solid #00d800;
+            border: 50vh solid #4e4e4e;
             height: 100vh;
             transition: 1s;
         }
@@ -85,8 +85,11 @@
             
             <table>
                 <tr>
-                      <th>Seu nome</th>
-                    <td><input type="text" /></td>
+                    <div class="inputbox">
+                        <p style="color: cornsilk;">Digite seu email:</p>
+                        <input type="Email" name="Email" id="Email" class="inputUser" required>
+                       
+                    </div>
                 </tr>
                 <tr>
                     <th>Senha</th>
@@ -95,21 +98,17 @@
                 <tr>
                     <th></th>
                     <td>
-                        <button onclick="myFunction()">
+                        <button>
                         
                             <a href="tela.html"> login</a>
                             </button>
                         
                     </td>
+                    <input type="date">
                 </tr>
             </table>
 
 
-            <script>
-                function myFunction() {
-                    alert("Seja bem vindo!!");
-                }
-            </script>
 
         </form>
 

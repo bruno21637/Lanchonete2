@@ -43,19 +43,54 @@ body {
 #myBtn:hover {
   background: #ddd;
   color: black;
+
+  
 }
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: rgb(131, 85, 216);}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
 </style>
 </head>
 <body>
+ 
 
-<video autoplay muted loop id="myVideo">
+<video autoplay muted   loop id="myVideo">
   <source src="Day of Defeat_ Prelude to Victory.mp4" type="video/mp4">
  
 </video>
 
 <div class="content">
+  <ul>
+    <li>
+      <a style="text-align: center;" >Conheca a equipe</a>
+      <ul>
+        <li><a href="https://api.whatsapp.com/send?phone=5547984424263">whatsapp</a></li>
+        <li><a href="https://www.linkedin.com/in/bruno-brandl-281ba11ab/">Linkedin</a></li>
+        <li><a href="https://github.com/bruno21637">github</a></li>
+      </ul>
+    </li>
+  </ul>
   <h1>Leia</h1>
   <p>Este vieo apresenta uma cena de demonstração do jogo day of defeat.</p>
+
+ 
   <button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
 

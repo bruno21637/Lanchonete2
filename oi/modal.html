@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Link DOD</h2>
+   <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-md" id="myBtn3">Click Aqui</button>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Click Aqui</h4>
+        </div>
+        <div class="modal-body">
+          <button>
+            <a href="index.html"> Click aqui para ser redirecionado</a>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal({backdrop: true});
+  });
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal({backdrop: false});
+  });
+  $("#myBtn3").click(function(){
+    $("#myModal3").modal({backdrop: "static"});
+  });
+});
+</script>
+
+</body>
+</html>
